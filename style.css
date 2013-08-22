@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0px 0px 0px 30px;
+	padding: 0px;
+	width: 1024px;
+	height: 768px;
+}
+tagline {
+	margin-top: 0px;
+	padding: 0px;
+}
+table {
+	float: right;
+	width: 400px;
+	padding: 50px;
+	background: #f4f4f4;
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+table td h2 {
+	color: green;
+	margin: 0px;
+}
+th {
+	font-size: 20px;
+	text-align: left;
+}
+td, th {
+	padding: 20px;
+	text-align: left;
+}
+path.link {
+	fill: none;
+	stroke: #666;
+	stroke-width: 1.5px;
+}
+marker#RUNNING {
+	fill: green;
+}
+path.link.RUNNING {
+	stroke: green;
+}
+path.link.FINISHED {
+	stroke-dasharray: 0, 2 1;
+}
+circle {
+	fill: #e5ecf6;
+	stroke: silver;
+	stroke-width: 1.5px;
+}
+text {
+	font: 14px sans-serif;
+	pointer-events: none;
+}
+text.shadow {
+	stroke: #fff;
+	stroke-width: 3px;
+	stroke-opacity: .8;
+}
