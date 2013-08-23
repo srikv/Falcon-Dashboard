@@ -1920,7 +1920,7 @@ function d3_layout_treemapPad(node, padding) {
 
 
 var links = [
-  {source: "rtbiFinal", target: "conversion-ping-weekly", type: "RUNNING", style: "red"},
+  {source: "rtbiFinal", target: "conversion-ping-weekly", type: "RUNNING"},
   {source: "rtbiFinal", target: "beacondatabusconversionl", type: "RUNNING"},
   {source: "readWriteTest", target: "ivory-test-praveenj-process", type: "WAITING"},
   {source: "ivory-test-soorajs-process", target: "ivory-test-praveenj-process", type: "WAITING"},
@@ -1997,7 +1997,6 @@ var path = svg.append("svg:g").selectAll("path")
 var circle = svg.append("svg:g").selectAll("circle")
     .data(force.nodes())
   .enter().append("svg:circle")
-    .style("fill", d.style)
     .attr("r", 15)
     .call(force.drag);
 
